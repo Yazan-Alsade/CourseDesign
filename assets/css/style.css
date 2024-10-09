@@ -29,19 +29,19 @@ ul {
   list-style-type: none;
 }
 header {
-  position: fixed;
-  width: 100%;
+  position: sticky;
   top: 0;
   z-index: 9;
   box-shadow: 0px 1.64744px 8.2372px 0px rgba(0, 0, 0, 0.5);
   padding: 20px 0;
+  background-color: #fff;
 }
 .row div.logo {
   display: flex;
   align-items: center;
   gap: 10px;
 }
-header .logo img {
+.logo img {
   width: 35px;
 }
 header .logo a {
@@ -50,7 +50,7 @@ header .logo a {
 header nav ul {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
+  gap: 30px;
 }
 header nav ul li a {
   color: #101928;
@@ -62,9 +62,10 @@ header .auth {
   gap: 10px;
 }
 header .auth a {
-  padding: 5px 30px;
+  padding: 8px 40px;
   border-radius: 10px;
   font-family: "Inter", sans-serif;
+  font-weight: 600;
   font-size: 14px;
   display: flex;
   align-items: center;
@@ -76,4 +77,78 @@ header .auth .login {
 header .auth .register {
   background-color: #545be8;
   color: #fff;
+}
+/* ///////////////////////////////////////
+////////////////////////////////
+////////////////////
+/////////////////
+*/
+
+main {
+  height: 75vh;
+}
+/* //////////////////////
+///////////////////
+////////////////////////
+ */
+footer {
+  background-color: #393e46;
+  padding: 50px 0;
+  color: #fff;
+}
+footer .row {
+  gap: 40px;
+}
+footer .row .left,
+footer .row .right {
+  width: calc((100% - 40px) / 2);
+}
+footer .left {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+footer .left p {
+  color: #f4f4f4;
+  font-size: 14px;
+}
+footer .left .icons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+footer .left .icons svg {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #fff;
+  padding: 10px;
+  box-sizing: content-box;
+}
+footer .row .right {
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+footer .footer-item {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+footer .row .right .footer-item nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+footer .left .logo a {
+  color: #fff;
+  font-size: 16px;
+}
+
+footer .right .footer-item a {
+  color: #f4f4f4;
+  font-size: 12px;
+  font-weight: 400;
 }

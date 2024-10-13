@@ -39,6 +39,7 @@ header {
   display: flex;
   align-items: center;
   gap: 10px;
+  flex-wrap: wrap;
 }
 .logo img {
   width: 35px;
@@ -68,6 +69,7 @@ header .auth a {
   font-size: 14px;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 header .auth .login {
   color: #545be8;
@@ -82,6 +84,7 @@ header .auth .login {
   background-color: #fff;
   display: flex;
   gap: 40px;
+  flex-wrap: wrap;
 }
 
 .find-course .left-find-course {
@@ -90,6 +93,7 @@ header .auth .login {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  flex-wrap: wrap;
 }
 .find-course .left-find-course p:nth-child(1) {
   color: #545be8;
@@ -97,6 +101,7 @@ header .auth .login {
   width: fit-content;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 .find-course .left-find-course p:nth-child(1) span {
   color: #545be8;
@@ -128,11 +133,13 @@ header .auth .login {
   display: flex;
   gap: 30px;
   align-items: center;
+  flex-wrap: wrap;
 }
 .find-info-course .play-video {
   display: flex;
   align-items: center;
   gap: 7px;
+  flex-wrap: wrap;
 }
 
 .find-course .right-find-course {
@@ -157,27 +164,27 @@ header .auth .login {
   flex-direction: column;
   gap: 20px;
   padding: 40px 0;
+  flex-wrap: wrap;
 }
-.about .about-left span{
-  font-family: 'Inter';
+.about .about-left span {
+  font-family: "Inter";
   color: #545be8;
 }
-.about .about-left h1{
+.about .about-left h1 {
   font-size: 40px;
   /* background-color: beige; */
   width: 300px;
   font-weight: 700;
-  font-family: 'Inter';
+  font-family: "Inter";
 }
-.about .about-left p{
+.about .about-left p {
   width: 400px;
   font-size: 17px;
   color: #969696;
-
 }
 
 .about .about-right {
-  width: calc((100% - 30px)  * 2 / 3);
+  width: calc((100% - 30px) * 2 / 3);
   /* background-color: green; */
 }
 .about .about-right {
@@ -203,10 +210,11 @@ header .auth .login {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  flex-wrap: wrap;
 }
 .about .about-right div h2 {
   color: #fff;
-  font-family: 'Inter';
+  font-family: "Inter";
   font-size: 18px;
 }
 .about .about-right div p {
@@ -214,16 +222,65 @@ header .auth .login {
   font-size: 14px;
   width: 200px;
 }
-.about .arrow{
+.about .arrow {
   display: flex;
   flex-direction: row;
-  /* align-items: center; */
   gap: 20px;
   justify-content: end;
-  /* background-color: red; */
+  flex-wrap: wrap;
   width: 100%;
   margin-right: 60px;
-  
+}
+.selected-courses {
+  padding: 30px 0;
+  background: linear-gradient(180deg, #545be8 0%, #272db0 100%);
+}
+.selected-courses .left {
+  width: calc((100% - 30px) / 2);
+}
+.selected-courses .left img {
+  width: 500px;
+  height: 500px;
+  /* background-color: green; */
+}
+.selected-courses .right {
+  width: calc((100% - 30px) / 2);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 20px 0;
+  flex-wrap: wrap;
+}
+
+.selected-courses .right h2 {
+  color: #fff;
+  font-family: "Inter";
+}
+.selected-courses .right span {
+  color: #f0c932;
+  font-size: 14px;
+  font-family: "Inter";
+}
+.selected-courses .right p {
+  color: #dddd;
+  width: 380px;
+  font-size: 15px;
+}
+.selected-courses .right .selected-info {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  flex-wrap: wrap;
+}
+.selected-courses .right .selected-info .selected-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+.selected-data span:nth-child(2) {
+  color: #dddd;
 }
 .courses {
   padding: 40px 0;
@@ -266,6 +323,7 @@ header .auth .login {
   width: 100%;
   height: 100%;
   padding: 20px;
+  flex-wrap: wrap;
 }
 .courses .course-info span:nth-child(1) {
   align-self: flex-start;
@@ -286,6 +344,7 @@ header .auth .login {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  flex-wrap: wrap;
 }
 .courses .course-details .views {
   color: #545be8;
@@ -329,6 +388,7 @@ header .auth .login {
   flex-direction: column;
   gap: 30px;
   background-color: #fff;
+  flex-wrap: wrap;
 }
 .testimonials .testimonial {
   width: calc((100% - 30px) / 2);
@@ -405,6 +465,7 @@ footer .left {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  flex-wrap: wrap;
 }
 footer .left p {
   color: #f4f4f4;

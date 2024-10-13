@@ -73,9 +73,75 @@ header .auth .login {
   color: #545be8;
   border: 2px solid #545be8;
 }
-header .auth .register {
+.register {
   background-color: #545be8;
   color: #fff;
+}
+/* Section find course  */
+.find-course {
+  background-color: #fff;
+  display: flex;
+  gap: 40px;
+}
+
+.find-course .left-find-course {
+  width: calc((100% - 40px) / 2);
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.find-course .left-find-course p:nth-child(1) {
+  color: #545be8;
+  font-family: "Inter";
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+.find-course .left-find-course p:nth-child(1) span {
+  color: #545be8;
+  font-weight: 700;
+  font-family: "Inter";
+}
+.find-course .left-find-course h2 {
+  font-size: 68px;
+  width: 70%;
+}
+.find-course .left-find-course h2 span {
+  color: #545be8;
+}
+.find-course .left-find-course p {
+  color: #969696;
+  font-size: 25px;
+}
+.find-course .left-find-course .find-info-course .register {
+  padding: 8px 40px;
+  border-radius: 10px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+}
+.find-course .left-find-course .find-info-course h3 {
+  font-family: "Inter";
+}
+.find-info-course {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+.find-info-course .play-video {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.find-course .right-find-course {
+  width: calc((100% - 40px) / 2);
+  text-align: center;
+}
+.find-course .right-find-course img {
+  width: 500px;
+  height: 500px;
 }
 
 .courses {
